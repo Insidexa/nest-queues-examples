@@ -1,0 +1,23 @@
+version: "3"
+services:
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+     - ${POSTGRES_PORT}:5432
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: root
+      POSTGRES_DB: test
+
+  redis:
+    image: redis
+    restart: always
+    ports:
+      - ${REDIS_PORT}:6379
+
+  rabbitmq:
+    image: rabbitmq
+    restart: always
+    ports:
+      - ${RABBITMQ_PORT}:5672
