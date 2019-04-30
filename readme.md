@@ -11,7 +11,6 @@ Run project:
  - copy `.env.example` to `.env`
  - `docker-compose up`
  - `npm i`
- - `npm run dev`
  - `npm run server`
  - `npm run queue`
  
